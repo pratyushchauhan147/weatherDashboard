@@ -3,13 +3,19 @@ import axios from "axios";
 import { motion } from "framer-motion";
 import TodayForecast from "./TodayForecast";
 import OtherDaysForcast from "./OtherDaysForcast";
-const API_KEY = "5cd9191fb4d2119bd42be787e8901d87";
-const BASE_URL = "https://api.openweathermap.org/data/2.5/forecast";
+
+
+const BASE_URL = import.meta.env.VITE_BASE_URL;
+const API_KEY = import.meta.env.VITE_API_URL;
+
+
 const Dash = (props) => {
+ 
   const [city, setCity] = useState();
   const [forecast, setForecast] = useState(null);
   const [loading, setLoading] = useState(false);
   const [history, setHistory] = useState([]);
+  const [error, seterror] = useState();
 
   const updateHistory = (cityName) => {
       setHistory((prev) => {
@@ -39,7 +45,8 @@ const Dash = (props) => {
         setCity(cityName);
         updateHistory(cityName)
       } catch (error) {
-        alert("City not found");
+        console.log(error)
+       // alert("City not found");
       }
       setLoading(false);
     };

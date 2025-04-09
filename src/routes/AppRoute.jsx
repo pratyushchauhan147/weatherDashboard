@@ -1,10 +1,10 @@
 import React from 'react'
-import Home from '../screens/home'
-import Test from '../screens/Test'
+import Home from '../screens/Home'
+
 
 import { Route,BrowserRouter,Routes } from 'react-router-dom'
 
-import { useScroll, useTransform } from 'framer-motion'
+import { useScroll} from 'framer-motion'
 
 const AppRoutes = () => {
   useScroll
@@ -12,8 +12,6 @@ const AppRoutes = () => {
     <div><BrowserRouter>
     <Routes>
         <Route path='/'  element={<Home/>} />
-      
-        <Route path='/testing2'  element={<Test/>} />
     </Routes>
     </BrowserRouter></div>
     
