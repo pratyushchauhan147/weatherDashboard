@@ -46,7 +46,7 @@ const Dash = (props) => {
         updateHistory(cityName)
       } catch (error) {
         console.log(error)
-       // alert("City not found");
+       alert("City not found");
       }
       setLoading(false);
     };
