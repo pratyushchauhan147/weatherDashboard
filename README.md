@@ -1,11 +1,16 @@
-# React + Vite
+# Weather Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a minimalistic Weather Dashboard 
+# Teck Stack :
+ # 1. VITE + React 
+      The Application is Based on React which is good for single page Application 
+# 2. Tailwind CSS 
+      Tailwind CSS provides a comprehensive set of responsive utility classes, making it easy to create websites that adapt to different screen sizes and devices. 
+# 3. Framer-Motion
+      Used for animations and transistions
+# 4. OpenWeather API
+      All the weather data is fetch from this API for a city
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
 ## Expanding the ESLint configuration
 
